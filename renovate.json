@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "description": "Groups every update type except major",
+      "groupName": "non-major",
+      "matchDepNames": ["!npm", "!pnpm", "!yarn"],
+      "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "replacement",
+        "rollback"
+      ]
+    }
+  ]
+}

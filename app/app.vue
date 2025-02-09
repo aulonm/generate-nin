@@ -1,29 +1,39 @@
-<script setup>
-useHead({
-  htmlAttrs: {
-    lang: 'en',
-  },
-})
-</script>
-
 <template>
-  <NuxtPage />
-  <p class="text-center py-6 pb-10 text-sm">
-    <UButton
-      to="https://github.com/atinux/my-pull-requests"
-      target="_blank"
-      color="black"
-      size="xs"
-      icon="i-simple-icons-github"
-    >
-      Create my own contributions page
-    </UButton>
-  </p>
-  <ScrollToTop />
+
+  <Body class="min-h-screen">
+    <Toaster />
+    <div class="min-h-screen flex flex-col justify-between">
+
+      <NuxtPage />
+
+      <footer class="container mt-12 flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
+        <div class="text-sm leading-loose text-muted-foreground md:text-left">
+          <p class=" text-center text-xs">
+            The code source is available on
+            <a href="https://github.com/aulonm/generate-nin" target="_blank"
+              class="underline underline-offset-4 font-bold decoration-foreground"> GitHub
+            </a>
+            . <a href="https://github.com/aulonm/nav-faker" target="_blank"
+              class="underline underline-offset-4 font-bold decoration-foreground">Nav-faker</a> is used to generate
+            the norwegian numbers. <a href="https://tedeh.net/tools/generator-for-swedish-personnummer/"
+              class="underline underline-offset-4 font-bold decoration-foreground" target="_blank">Tedeh</a> was an
+            inspiration for the design and the code for swedish numbers.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </Body>
 </template>
 
-<style lang="postcss">
-body {
-  @apply min-h-screen bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 font-sans;
-}
-</style>
+<script lang="ts" setup>
+import Toaster from '@/components/ui/toast/Toaster.vue'
+
+useSeoMeta({
+  title: "Generate NIN",
+  description: "Generate national identity numbers",
+  robots: {
+    index: false,
+    follow: false,
+  },
+});
+</script>

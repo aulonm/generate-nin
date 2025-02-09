@@ -1,32 +1,73 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-  // https://nuxt.com/modules
   modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint',
-    '@nuxt/ui',
+    '@nuxtjs/tailwindcss',
+    'radix-vue/nuxt',
+    '@nuxtjs/color-mode',
     '@vueuse/nuxt',
+    '@nuxt/icon',
+    '@nuxthub/core',
+    '@nuxt/fonts',
+    '@nuxt/image',
+    'shadcn-nuxt',
   ],
 
-  // https://devtools.nuxt.com
+  imports: {
+    imports: [
+      {
+        from: 'tailwind-variants',
+        name: 'tv',
+      },
+      {
+        from: 'tailwind-variants',
+        name: 'VariantProps',
+        type: true,
+      },
+    ],
+  },
   devtools: { enabled: true },
 
-  // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
-  future: { compatibilityVersion: 4 },
-  compatibilityDate: '2024-07-30',
-
-  // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {
-    cache: true,
-  },
-
-  // https://eslint.nuxt.com
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'scroll-behavior-smooth',
       },
     },
   },
-})
+
+  css: ['../assets/css/tailwind.css'],
+
+  colorMode: {
+    classSuffix: '',
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  compatibilityDate: '2025-01-01',
+
+  fonts: {
+    families: [
+      { name: 'Recursive', provider: 'fontsource' },
+      { name: 'Cormorant Garamond', provider: 'google' },
+    ],
+  },
+
+  tailwindcss: {
+    exposeConfig: true,
+  },
+
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
+  }
+});
