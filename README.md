@@ -29,7 +29,7 @@ pnpm build
 
 ## Credits
 
-- nav-faker: forked the nav-faker repo and made i esm-ready and upgraded all the dependencies. Published to private github package registry.
+- [nav-faker](https://github.com/navikt/nav-faker): forked the nav-faker repo and made i esm-ready and upgraded all the dependencies. Published to private github package registry.
 - [Tedeh.net](https://tedeh.net/tools/generator-for-swedish-personnummer/) for the swedish generator. Most of the code is the same as his, but tweaked it a little for typescript support and a little more robust. 
 
 ## License
