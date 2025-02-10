@@ -26,7 +26,7 @@
             </div>
             <div class="flex items-center space-x-2">
               <RadioGroupItem id="0" value="0" />
-              <Label for="0">Women</Label>
+              <Label for="0">Woman</Label>
             </div>
           </RadioGroup>
 
