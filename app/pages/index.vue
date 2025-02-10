@@ -45,10 +45,10 @@ useHead({
 })
 
 useSeoMeta({
-  title: `Generate Norwegian National Identity Number`,
-  description: `Here you can generate Norwegian national identity numbers`,
-  ogTitle: `Generate Norwegian National Identity Number`,
-  ogDescription: `Here you can generate Norwegian national identity numbers`,
+  title: `Generate National Identity Numbers for Norway and Sweden`,
+  description: `A site that creates synthetic Norwegian and Swedish national identity numbers`,
+  ogTitle: `Generate National Identity Numbers for Norway and Sweden`,
+  ogDescription: `A site that creates synthetic Norwegian and Swedish national identity numbers`,
 })
 
 </script>

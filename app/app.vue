@@ -17,7 +17,7 @@
               class="underline underline-offset-4 font-bold decoration-foreground">Nav-faker</a> is used to generate
             the norwegian numbers. <a href="https://tedeh.net/tools/generator-for-swedish-personnummer/"
               class="underline underline-offset-4 font-bold decoration-foreground" target="_blank">Tedeh</a> was an
-            inspiration for the design and the code for swedish numbers.
+            inspiration for the design and the logic for swedish numbers.
           </p>
         </div>
       </footer>
@@ -29,11 +29,7 @@
 import Toaster from '@/components/ui/toast/Toaster.vue'
 
 useSeoMeta({
-  title: "Generate NIN",
+  title: "Generate National Identity Numbers",
   description: "Generate national identity numbers",
-  robots: {
-    index: false,
-    follow: false,
-  },
 });
 </script>
