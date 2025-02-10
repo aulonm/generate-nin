@@ -6,7 +6,8 @@
         Generate National Identity Numbers
       </h1>
       <span data-br="Giw6I" class="max-w-[750px] text-balance text-center text-lg font-light text-foreground">
-        Generates a valid Norwgian "Fødselsnummer" or "D-nummer", or Swedish "Personnummer", a unique number assigned to
+        Generates a valid Norwegian "Fødselsnummer" or "D-nummer", or Swedish "Personnummer", a unique number assigned
+        to
         every person born or moved
         to Norway/Sweden. They are all synthetic and are not possible to connect to a real person.
       </span>
