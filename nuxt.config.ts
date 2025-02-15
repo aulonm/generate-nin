@@ -28,14 +28,6 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
 
-  app: {
-    head: {
-      htmlAttrs: {
-        class: 'scroll-behavior-smooth',
-      },
-    },
-  },
-
   css: ['../assets/css/tailwind.css'],
 
   colorMode: {
