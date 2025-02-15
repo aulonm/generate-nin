@@ -40,8 +40,7 @@ import SwedishGenerator from '@/components/SwedishGenerator.vue'
 
 useHead({
   link: [
-    { rel: 'icon', href: '/favicon.png' },
-    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'icon', href: '/favicon-32x32.png' },
   ],
 })
 
