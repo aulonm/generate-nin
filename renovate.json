@@ -17,5 +17,12 @@
         "rollback"
       ]
     }
+  ],
+  "hostRules": [
+    {
+      "matchHost": "https://npm.pkg.github.com/",
+      "hostType": "npm",
+      "token": "{{ secrets.GITHUB_TOKEN }}"
+    }
   ]
 }
