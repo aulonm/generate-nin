@@ -73,8 +73,8 @@ importers:
         specifier: 4.4.2
         version: 4.4.2(@vue/compiler-sfc@3.5.16)(prettier@3.5.3)
       '@iconify-json/lucide':
-        specifier: 1.2.48
-        version: 1.2.48
+        specifier: 1.2.49
+        version: 1.2.49
       '@nuxtjs/color-mode':
         specifier: 3.5.2
         version: 3.5.2(magicast@0.3.5)(rollup@4.40.2)
@@ -772,8 +772,8 @@ packages:
       '@vue/compiler-sfc':
         optional: true
 
-  '@iconify-json/lucide@1.2.48':
-    resolution: {integrity: sha512-jDVqOHEF7XUwHJzx7fhwVXnx638lL89wOfmBob5UJofSGGIYV544zktmHr4CzKePslDBgl3MPKEpmFU/RfzppQ==}
+  '@iconify-json/lucide@1.2.49':
+    resolution: {integrity: sha512-Z6j8QKE7dcM3jDlstxTONpsw7GSJwzeVcre2xXqCmg+QvLoqmJJEugQ3PcGqpp6dtBIcBOtE6+LUeY5OlXmCuA==}
 
   '@iconify/collections@1.0.558':
     resolution: {integrity: sha512-4ACVK6+8PksNTe3tVa1FJ2vcy/m9hx9dsjq8aVblWD2wAbGNqr2tVmxnm6EnKX0PON9BrrGy+U3GrqzJUSkJuw==}
@@ -6162,7 +6162,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@iconify-json/lucide@1.2.48':
+  '@iconify-json/lucide@1.2.49':
     dependencies:
       '@iconify/types': 2.0.0
 
