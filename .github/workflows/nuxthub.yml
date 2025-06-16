@@ -31,11 +31,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build application
-        run: pnpm build
-
-      - name: Deploy to NuxtHub
-        uses: nuxt-hub/action@v1
+      - name: Build & deploy to NuxtHub
+        uses: nuxt-hub/action@v2
         id: deploy
         with:
           project-key: generate-nin-g0si
