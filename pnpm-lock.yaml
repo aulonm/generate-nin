@@ -57,8 +57,8 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
       tailwind-variants:
-        specifier: 0.3.1
-        version: 0.3.1(tailwindcss@3.4.17)
+        specifier: 3.1.0
+        version: 3.1.0(tailwind-merge@3.3.1)(tailwindcss@3.4.17)
       vee-validate:
         specifier: 5.0.0-beta.0
         version: 5.0.0-beta.0(vue@3.5.20(typescript@5.9.2))
@@ -4794,17 +4794,18 @@ packages:
     peerDependencies:
       tailwindcss: 1 || 2 || 2.0.1-compat || 3
 
-  tailwind-merge@2.5.4:
-    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
-
   tailwind-merge@3.3.1:
     resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
 
-  tailwind-variants@0.3.1:
-    resolution: {integrity: sha512-krn67M3FpPwElg4FsZrOQd0U26o7UDH/QOkK8RNaiCCrr052f6YJPBUfNKnPo/s/xRzNPtv1Mldlxsg8Tb46BQ==}
+  tailwind-variants@3.1.0:
+    resolution: {integrity: sha512-ieiYaEfUr+sNhw/k++dosmZfVA4VIG5bV+G1eGdJSC4FcflqQv0iSIlOLj/RbzRuTu/VrIiNSlwh1esBM3BXUg==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
+      tailwind-merge: '>=3.0.0'
       tailwindcss: '*'
+    peerDependenciesMeta:
+      tailwind-merge:
+        optional: true
 
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
@@ -10667,14 +10668,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  tailwind-merge@2.5.4: {}
-
   tailwind-merge@3.3.1: {}
 
-  tailwind-variants@0.3.1(tailwindcss@3.4.17):
+  tailwind-variants@3.1.0(tailwind-merge@3.3.1)(tailwindcss@3.4.17):
     dependencies:
-      tailwind-merge: 2.5.4
       tailwindcss: 3.4.17
+    optionalDependencies:
+      tailwind-merge: 3.3.1
 
   tailwindcss-animate@1.0.7(tailwindcss@3.4.17):
     dependencies:
