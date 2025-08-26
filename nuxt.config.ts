@@ -1,8 +1,9 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
   modules: [
-    '@nuxtjs/tailwindcss',
     'radix-vue/nuxt',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
@@ -61,5 +62,11 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './app/components/ui'
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ]
   }
 });
