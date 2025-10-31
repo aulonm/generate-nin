@@ -25,7 +25,7 @@
     "canvas-confetti": "1.9.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-vue-next": "0.548.0",
+    "lucide-vue-next": "0.552.0",
     "nuxt": "4.0.3",
     "radix-vue": "1.9.17",
     "shadcn-nuxt": "2.3.2",
@@ -46,7 +46,7 @@
     "prettier-plugin-tailwindcss": "0.7.1",
     "tailwindcss-animate": "1.0.7",
     "typescript": "5.9.3",
-    "wrangler": "4.45.2"
+    "wrangler": "4.45.3"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
