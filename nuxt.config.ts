@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
   ],
 
+  
   imports: {
     imports: [
       {
