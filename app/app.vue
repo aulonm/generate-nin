@@ -6,9 +6,9 @@
 
       <NuxtPage />
 
-      <footer class="container mt-12 flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
+      <footer class="container mt-12 flex mx-auto flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
         <div class="text-sm leading-loose text-muted-foreground md:text-left">
-          <p class=" text-center text-xs">
+          <p class="text-center text-xs max-w-md">
             The code source is available on
             <a href="https://github.com/aulonm/generate-nin" target="_blank"
               class="underline underline-offset-4 font-bold decoration-foreground"> GitHub

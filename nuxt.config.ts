@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxthub/core',
     '@nuxt/fonts',
-    '@nuxt/image',
     'shadcn-nuxt',
   ],
 
