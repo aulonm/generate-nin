@@ -15,7 +15,7 @@
   "dependencies": {
     "@aulonm/nav-faker": "2.1.1",
     "@internationalized/date": "3.12.1",
-    "@nuxt/fonts": "0.14.0",
+    "@nuxt/fonts": "1.1.0",
     "@nuxt/icon": "2.2.2",
     "@nuxthub/core": "0.10.7",
     "@radix-ui/colors": "3.0.0",
